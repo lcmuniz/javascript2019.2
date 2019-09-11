@@ -13,4 +13,5 @@ readline-sync para o seu computador usando os comandos abaixo
 no terminal na pasta dos exercícios.
 
 `npm init`
+
 `npm install readline-sync --save`
