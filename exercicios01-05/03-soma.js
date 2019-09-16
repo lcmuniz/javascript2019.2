@@ -2,26 +2,17 @@
 
 // Resolução:
 
-// Importa a biblioteca readline-sync e atribui à variável prompt a 
-// função question responsável por solicitar dados através do teclado 
-const prompt = require('readline-sync').question
+function somar() {
+  
+  let numero1 = document.getElementById('numero1').value
 
-// Pede um número pro usuário e o armazena na variável entrada1
-const entrada1 = prompt('Digite o primeiro número: ')
+  let numero2 = document.getElementById('numero2').value
 
-// Pede outro número pro usuário e o armazena na variável entrada2
-const entrada2 = prompt('Digite o segundo número: ')
+  numero1 = Number(numero1)
 
-// Converte a primeira entrada do usuário em número e armazena na variável numero1 
-// (quando o usuário entre com um valor pelo teclado, é sempre como texto)
-const numero1 = Number(entrada1)
+  numero2 = Number(numero2)
 
-// Converte a segunda entrada do usuário em número e armazena na variável numero2
-// (quando o usuário entre com um valor pelo teclado, é sempre como texto)
-const numero2 = Number(entrada2)
+  const soma = numero1 + numero2
 
-// Soma os dois números e armazena a soma na variável soma
-const soma = numero1 + numero2
-
-// Mostra a soma dos números digitados
-console.log('A soma dos números é ' + soma)
+  document.getElementById('soma').value = 'A soma dos números é ' + soma
+}
