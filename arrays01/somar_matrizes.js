@@ -35,5 +35,15 @@ function somarMatrizes(A, B) {
   
 }
 
-x = somarMatrizes([[1,2],[2,3],[1,1]], [[2,3],[1,1],[3,3]])
-console.log(x)
+X = [
+  [1,2],
+  [3,4],
+  [5,6]
+]
+Y = [
+  [9,8],
+  [7,6],
+  [5,4]
+]
+Z = somarMatrizes(X, Y)
+console.log(Z)
